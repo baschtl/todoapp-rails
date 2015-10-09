@@ -18,11 +18,11 @@ gem 'jbuilder', '~> 2.0'
 group :test do
   gem 'factory_girl_rails'
   gem 'faker'
-  gem 'rspec-rails', '~> 3.0'
 end
 
 group :development, :test do
   gem 'pry-byebug'
+  gem 'rspec-rails', '~> 3.0'
 end
 
 group :development do
