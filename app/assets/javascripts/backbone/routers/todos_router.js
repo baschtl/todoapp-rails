@@ -4,11 +4,16 @@ var App = App || {};
   "use strict";
 
   App.Routers.TodosRouter = Backbone.Router.extend({
+    initialize: function(options) {
+      this.todos = options.todos;
+    },
+
     routes: {
       "": "index"
     },
+
     index: function() {
-      var view = new App.Views.Todos.IndexView({ collection: App.todos });
+      var view = new App.Views.Todos.IndexView({ collection: this.todos });
       $('body').html(view.render().$el);
     }
   });

@@ -1,5 +1,4 @@
 var App = App || {};
-var App.Views.Todos = App.Views.Todos || {};
 
 (function() {
   "use strict";
@@ -8,7 +7,7 @@ var App.Views.Todos = App.Views.Todos || {};
     template: JST["backbone/templates/todos/index"],
 
     render: function() {
-      this.$el.html(this.template({ todos: this.collection.toJSON() }));
+      this.$el.html(this.template({ todos: this.collection }));
       return this;
     }
   });

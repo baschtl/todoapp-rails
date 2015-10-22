@@ -8,8 +8,8 @@
 
   <% todos.each(function(model) { %>
     <tr>
-      <th><% model.escape('title') %></th>
-      <th><% model.escape('completed') %></th>
+      <th><%= model.escape('title') %></th>
+      <th><%= model.escape('completed') %></th>
     </tr>
   <% }); %>
 </table>
