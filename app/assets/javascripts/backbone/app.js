@@ -7,7 +7,7 @@
 var App = {
   Models: {},
   Collections: {},
-  Views: {},
+  Views: { Todos: {} },
   Routers: {},
 
   initialize: function(data) {
