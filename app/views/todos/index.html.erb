@@ -36,3 +36,18 @@
     <button class="clear-completed">Clear completed</button>
   </footer>
 </section>
+
+<script type="text/json" id="bootstrap">
+  { "todos": <%= @todos.to_json %> }
+</script>
+
+<script type="text/javascript">
+  $(function () {
+    var div, data;
+    div = $('<div></div>');
+    div.html($('#bootstrap').text());
+    data = JSON.parse(div.text());
+    
+    App.initialize(data);
+  });
+</script>

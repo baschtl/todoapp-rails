@@ -1,0 +1,19 @@
+<h1>Todos</h1>
+
+<table id="todos-table">
+  <tr>
+    <th>Title</th>
+    <th>Completed</th>
+  </tr>
+
+  <% todos.each(function(model) { %>
+    <tr>
+      <th><% model.escape('title') %></th>
+      <th><% model.escape('completed') %></th>
+    </tr>
+  <% }); %>
+</table>
+
+<br/>
+
+<a href="#/new">New Todo</a>
