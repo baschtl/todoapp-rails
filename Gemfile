@@ -1,23 +1,23 @@
 source 'https://rubygems.org'
 
-
 gem 'rails', '4.2.4'
-gem 'sqlite3'
-gem 'uglifier', '>= 1.3.0'
-gem 'coffee-rails', '~> 4.1.0'
-# See https://github.com/rails/execjs#readme for more supported runtimes
-# gem 'therubyracer', platforms: :ruby
 
+# database
+gem 'sqlite3'
+
+# serialization
+gem 'jbuilder'
+
+# assets
+gem 'rails-backbone'
+gem 'uglifier'
 gem 'jquery-rails'
 gem 'turbolinks'
-gem 'jbuilder', '~> 2.0'
-
-# Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
 
 group :test do
   gem 'factory_girl_rails'
   gem 'faker'
+  gem 'database_cleaner'
 end
 
 group :development, :test do
